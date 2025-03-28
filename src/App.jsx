@@ -14,7 +14,7 @@ const App = () => {
       {/* <Route path="/get-started" element={<Started />} /> */}
 
       {/* Admin setup */}
-      {/* <Route path="/admin/*" element={<Admin />} /> {/* Admin Routes */}      */}
+      {/* <Route path="/admin/*" element={<Admin />} /> {/* Admin Routes */}  
     </Routes>
   );
 };

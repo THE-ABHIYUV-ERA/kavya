@@ -1,45 +1,47 @@
-import { CheckCircle, Clock, Shield, Layers, Bell, Globe } from "lucide-react";
+import { FaShieldAlt, FaChartLine, FaUserGraduate, FaCloud, FaQrcode, FaLayerGroup } from "react-icons/fa";
 
 const OurFeatures = () => {
   const features = [
     {
-      icon: <CheckCircle className="w-12 h-12 text-blue-500" />,
-      title: "Seamless Attendance Tracking",
-      description: "Easily mark attendance with QR codes, GPS verification, and manual entry options.",
+      icon: <FaShieldAlt className="w-12 h-12 text-blue-500" />,
+      title: "Secure User Authentication",
+      description: "Industry-standard JWT authentication keeps user data secure and protected.",
     },
     {
-      icon: <Clock className="w-12 h-12 text-green-500" />,
-      title: "Real-Time Reports Generator",
-      description: "Generate instant attendance reports and track student participation effortlessly.",
+      icon: <FaChartLine className="w-12 h-12 text-green-500" />,
+      title: "Admin Dashboard Analytics",
+      description: "Comprehensive analytics dashboard for monitoring attendance patterns and trends.",
     },
     {
-      icon: <Shield className="w-12 h-12 text-purple-500" />,
-      title: "Secure & Reliable Attendance System",
-      description: "Your data is protected with industry-grade encryption and cloud backups.",
+      icon: <FaUserGraduate className="w-12 h-12 text-purple-500" />,
+      title: "SStudent Portal System",
+      description: "Personalized student portal for tracking individual attendance records.",
     },
     {
-      icon: <Layers className="w-12 h-12 text-yellow-500" />,
+      icon: <FaCloud className="w-12 h-12 text-yellow-500" />,
+      title: " Real-time Cloud Updates",
+      description: "Cloud integration ensures attendance data is synchronized in real-time.",
+    },
+    {
+      icon: <FaQrcode className="w-12 h-12 text-red-500" />,
+      title: "Future QR & Biometric",
+      description: "Upcoming features include QR code scanning and biometric attendance options.",
+    },
+    {
+      icon: <FaLayerGroup className="w-12 h-12 text-indigo-500" />,
       title: "Multi-Layer Access Control",
       description: "Role-based permissions ensure secure and structured access to data.",
-    },
-    {
-      icon: <Bell className="w-12 h-12 text-red-500" />,
-      title: "Automated Notifications",
-      description: "Receive instant alerts for low attendance, upcoming events, and schedule changes.",
-    },
-    {
-      icon: <Globe className="w-12 h-12 text-indigo-500" />,
-      title: "Cloud-Based Accessibility",
-      description: "Access attendance records anytime, anywhere with cloud integration.",
     },
   ];
 
   return (
     <section className="bg-gray-900 dark:bg-gray-50 py-20 px-6 transition-all duration-1000">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-sky-600 dark:text-sky-600 mb-3">Our Features</h2>
+        <h2 className="text-4xl font-extrabold mb-3">
+          <span className="text-gray-200 dark:text-gray-700">Powerful</span> <span className="text-sky-600 dark:text-sky-600">Features</span>
+        </h2>
         <p className="text-lg text-gray-300 dark:text-gray-600 max-w-3xl mx-auto mb-10">
-        AttendMaster offers a comprehensive suite of features, including real-time attendance tracking, cloud-based data storage, and automated reporting to streamline attendance management for organizations.
+        AttendMaster provides everything you need to streamline attendance management
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
